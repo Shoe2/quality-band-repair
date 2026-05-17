@@ -27,6 +27,8 @@ const { title, description, heroImage } = Astro.props;
 				margin: 0 auto;
 				border-radius: 12px;
 				box-shadow: var(--box-shadow);
+				max-height: 510 px;
+				height: 510 px;
 			}
 			.prose {
 				width: 720px;
@@ -59,7 +61,7 @@ const { title, description, heroImage } = Astro.props;
 		<main>
 			<article>
 				<div class="hero-image">
-					{heroImage && <img height=510 src={heroImage} alt="" />}
+					{heroImage && <img src={heroImage} alt="" />}
 				</div>
 				<div class="prose">
 					<div class="title">
