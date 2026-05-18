@@ -15,6 +15,11 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 			display: flex;
 			flex-direction: row;
 		}
+
+		img {
+			max-height: 512px;
+			max-width: 512px;
+		}
 		</style>
 	</head>
 	<body>
@@ -32,11 +37,11 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 			</p>
 			</div>
 			<div class="container">
-			<img src="/drums.jpg" />
 			<p>
 				Quality Band Repair's focus has always been on craftsmanship and quality over speed.  Work is done
 				by appointment only, a diagnosis is free and hours are flexible.  
 			</p>
+			<img src="/drums.jpg" />
 			</div>
 			<div class="container">
 			<img src="/amp2.jpg" />
@@ -52,8 +57,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 			</div>
 			</div>
 			<div class="container">
-			<img src="/me.jpg" />
 			<p><a href="/contact">Contact Andrew</a></p>
+			<img src="/me.jpg" />
 			</div>
 		</main>
 		<Footer />
