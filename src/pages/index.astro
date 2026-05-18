@@ -14,6 +14,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 			display: flex;
 			flex-direction: row;
+			gap: 10px;
 		}
 
 		img {
@@ -24,6 +25,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		.profile-pic {
 			max-width: 100px;
 		}
+
+		.child-item {
+  			align-self: center;
+  		}
 		</style>
 	</head>
 	<body>
@@ -31,8 +36,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<main>
 			<h1>Quality Band Repair and Instrument Rental</h1>
 			<div class="container">
-			<img src="/bari-final.jpg"/>
-			<p>
+			<img class="child-item" src="/bari-final.jpg"/>
+			<p class="child-item">
 			
 				I've been repairing Brass and Woodwind instruments for 8 years.  Guitars, amps, microphones,
 				and other music gear for 2 years, and I'm an ameture luthier (learning to work on violins, 
@@ -41,15 +46,15 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 			</p>
 			</div>
 			<div class="container">
-			<p>
+			<p class="child-item">
 				Quality Band Repair's focus has always been on craftsmanship and quality over speed.  Work is done
 				by appointment only, a diagnosis is free and hours are flexible.  
 			</p>
-			<img src="/drums.jpg" />
+			<img src="/drums.jpg"  class="child-item" />
 			</div>
 			<div class="container">
-			<img src="/amp2.jpg" />
-			<div>
+			<img src="/amp2.jpg"  class="child-item"/>
+			<div class="child-item">
 			<p>Services:</p>
 			<ul>
 				<li>Instrument Rentals</li>
@@ -61,8 +66,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 			</div>
 			</div>
 			<div class="container">
-			<p><a href="/contact">Contact Andrew</a></p>
-			<img class="profile-pic" src="/me.jpg" />
+			<p class="child-item"><a href="/contact">Contact Andrew</a></p>
+			<img class="profile-pic" src="/me.jpg"  class="child-item"/>
 			</div>
 		</main>
 		<Footer />
