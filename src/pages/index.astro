@@ -9,21 +9,38 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+		.container {
+
+			display: flex;
+			flex-direction: row;
+		}
+		</style>
 	</head>
 	<body>
 		<Header />
 		<main>
 			<h1>Quality Band Repair and Instrument Rental</h1>
+			<div class="container">
+			<img src="/bari-final.jpg"/>
 			<p>
+			
 				I've been repairing Brass and Woodwind instruments for 8 years.  Guitars, amps, microphones,
 				and other music gear for 2 years, and I'm an ameture luthier (learning to work on violins, 
 				accoustic guitars, and other wooden string instruments).  I've worked on more obscure instruments
 				like accordions, banjos and even a church organ as well.
 			</p>
+			</div>
+			<div class="container">
+			<img src="/drums.jpg" />
 			<p>
 				Quality Band Repair's focus has always been on craftsmanship and quality over speed.  Work is done
 				by appointment only, a diagnosis is free and hours are flexible.  
 			</p>
+			</div>
+			<div class="container">
+			<img src="/amp2.jpg" />
+			<div>
 			<p>Services:</p>
 			<ul>
 				<li>Instrument Rentals</li>
@@ -32,7 +49,12 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 				<li>Amateur luthier (orchestra and accoustic guitars...etc)</li>
 				<li>Accordion, percussion...if it's musical, or audio adjacent I can probably fix it!</li>
 			</ul>
+			</div>
+			</div>
+			<div class="container">
+			<img src="/me.jpg" />
 			<p><a href="/contact">Contact Andrew</a></p>
+			</div>
 		</main>
 		<Footer />
 	</body>
