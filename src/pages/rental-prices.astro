@@ -1,0 +1,110 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+		.container {
+
+			display: flex;
+			flex-direction: row;
+			gap: 10px;
+		}
+
+		img {
+			max-height: 512px;
+			max-width: 256px;
+		}
+
+		.profile-pic {
+			max-width: 100px;
+		}
+
+		.child-item {
+  			align-self: center;
+  		}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Instrument Rental Prices</h1>
+			<p>
+			My instrument rentals are meant to be affordable, low risk options for students that let parents
+			have the opportunity to give thier children a chance to try things out at a low cost without committing
+			to purchasing anything.  I currently do not offer rent-to-own options.
+			</p>
+
+			<div class="container">
+			<img class="child-item" src="/rentals/flute.png"/>
+			<p class="child-item">
+				Flute rental - $15/month
+			</p>
+			</div>
+
+			<div class="container">
+			<p class="child-item">
+				Clarinet Rental - $15 /month  
+			</p>
+			<img src="/rentals/clarinet.png"  class="child-item" />
+			</div>
+
+			<div class="container">
+			<p class="child-item">
+				Alto Saxaphone - $40 /month  
+			</p>
+			<img src="/rentals/alto-sax.png"  class="child-item" />
+			</div>
+
+			<div class="container">
+			<p class="child-item">
+				Trumpet Rental - $15 /month  
+			</p>
+			<img src="/rentals/trumpet.png"  class="child-item" />
+			</div>
+
+			<div class="container">
+			<img class="child-item" src="/rentals/trombone.png"/>
+			<p class="child-item">
+			Trombone rental - $15/month
+			</p>
+			</div>
+
+			<div class="container">
+			<img class="child-item" src="/rentals/french-horn.png"/>
+			<p class="child-item">
+			Trombone rental - $15/month
+			</p>
+			</div>
+
+			<div class="container">
+			<img class="child-item" src="/rentals/bass.png"/>
+			<p class="child-item">
+				Bass Guitar Rental - $15/month
+			</p>
+			</div>
+
+			<div class="container">
+			<p class="child-item">
+				Electric Guitar Rental - $15 /month  
+			</p>
+			<img src="/rentals/guitar.jpg"  class="child-item" />
+			</div>
+			
+			<!-- <div class="container">
+			<img class="child-item" src="/rentals/amp.jpg"/>
+			<p class="child-item">
+				Practice Amp Rental - Guitar - $15/month
+			</p>
+			</div> -->
+
+		</main>
+		<Footer />
+	</body>
+</html>
