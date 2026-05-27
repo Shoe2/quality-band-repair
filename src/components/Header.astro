@@ -6,6 +6,7 @@ import { SITE_TITLE } from '../consts';
 <header>
 	<nav>
 		<h2><a href="/">{SITE_TITLE}</a></h2>
+		<button class="hamburger-menu" click="">≡</button>
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/rental-prices">Rental-Prices</HeaderLink>
@@ -17,6 +18,11 @@ import { SITE_TITLE } from '../consts';
 	</nav>
 </header>
 <style>
+
+	.hamburger-menu{
+		display:none;
+	}
+
 	header {
 		margin: 0;
 		padding: 0 1em;
@@ -54,6 +60,15 @@ import { SITE_TITLE } from '../consts';
 	@media (max-width: 720px) {
 		.social-links {
 			display: none;
+		}
+
+		.hamburger-menu {
+			display: block;
+			padding: 8px;
+		}
+
+		.internal-links { 
+				display: none;
 		}
 	}
 </style>
