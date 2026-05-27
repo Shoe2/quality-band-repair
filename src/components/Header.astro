@@ -6,8 +6,8 @@ import { SITE_TITLE } from '../consts';
 <header>
 	<nav>
 		<h2><a href="/">{SITE_TITLE}</a></h2>
-		<button class="hamburger-menu" click="">≡</button>
-		<div class="internal-links">
+		<button id="hamburger-menu" click="">≡</button>
+		<div id="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/rental-prices">Rental-Prices</HeaderLink>
 			<HeaderLink href="/repair-photos">Repair Photos</HeaderLink>
@@ -17,9 +17,17 @@ import { SITE_TITLE } from '../consts';
 		</div>
 	</nav>
 </header>
+<script>
+  const button = document.getElementById('hamburger-menu');
+  const target = document.getElementById('internal-links');
+
+  button?.addEventListener('click', () => {
+    target?.classList.toggle('active');
+  });
+</script>
 <style>
 
-	.hamburger-menu{
+	#hamburger-menu{
 		display:none;
 	}
 
@@ -62,13 +70,24 @@ import { SITE_TITLE } from '../consts';
 			display: none;
 		}
 
-		.hamburger-menu {
+		#hamburger-menu {
 			display: block;
-			padding: 8px;
+			padding-right: 12px;
+			padding-left: 12px;
+			padding-bottom: 8px;
+			padding-top: 8px;
+			margin-top: 8px;
+			margin-bottom: 8px;
+			background-color: white;
 		}
 
-		.internal-links { 
+		#internal-links { 
 				display: none;
+		}
+
+		#internal-links.active{
+			display: flex;
+			flex-direction: column;
 		}
 	}
 </style>
