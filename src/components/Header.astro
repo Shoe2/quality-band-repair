@@ -16,6 +16,14 @@ import { SITE_TITLE } from '../consts';
 			<HeaderLink href="/contact">Contact</HeaderLink>
 		</div>
 	</nav>
+	<div id="menu">
+		<HeaderLink href="/">Home</HeaderLink>
+		<HeaderLink href="/rental-prices">Rental-Prices</HeaderLink>
+		<HeaderLink href="/repair-photos">Repair Photos</HeaderLink>
+		<HeaderLink href="/lessons">Lessons</HeaderLink>
+		<HeaderLink href="/about">About</HeaderLink>
+		<HeaderLink href="/contact">Contact</HeaderLink>
+	</div>
 </header>
 <script>
   const button = document.getElementById('hamburger-menu');
@@ -72,21 +80,22 @@ import { SITE_TITLE } from '../consts';
 
 		#hamburger-menu {
 			display: block;
-			padding-right: 12px;
-			padding-left: 12px;
-			padding-bottom: 8px;
-			padding-top: 8px;
+			padding-right: 24px;
+			padding-left: 24px;
+			padding-bottom: 26px;
+			padding-top: 16px;
 			margin-top: 8px;
 			margin-bottom: 8px;
 			background-color: white;
 			border-radius: 10px;
+			font-size: 24px;
 		}
 
 		#internal-links { 
 			display: none;
 		}
 
-		#internal-links.active{
+		#menu.active{
 			position: absoulte;
 			display: flex;
 			flex-direction: column;
