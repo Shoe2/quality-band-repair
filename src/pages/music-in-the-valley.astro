@@ -3,13 +3,113 @@ import Layout from '../layouts/BlogPost.astro';
 import Layout2 from '../layouts/ChildPost.astro';
 ---
 
-<Layout
-	title="Music in the Valley"
-	heroImage="/inspire-music-logo.png"
->
-	<p>
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+		.container {
+
+			display: flex;
+			flex-direction: row;
+			gap: 10px;
+			padding-top: 5px;
+		}
+
+		img {
+			max-height: 512px;
+			max-width: 256px;
+		}
+
+		.profile-pic {
+			max-width: 100px;
+		}
+
+		.child-item {
+  			align-self: center;
+			font-weight: bold;
+  		}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Music in the Valley</h1>
+			<p>
+			These are some cool places to listen, practice or perform music in and near the Cherry Valley area of Washington
+			</p>
+
+			<div class="container">
+			<img class="child-item" src="/inspire-music-logo.png"/>
+			<p class="child-item">
+					
 		Jeff Coult with Inspire Music offers lessons for many instruments, 
 		as well as music to your performance to enhance a venue or event.  
 		He has a location in Downtown Duvall at 26311 NE Valley Street, above Valley Mail. 
- 	</p>
-</Layout>
+ 	
+			</p>
+			</div>
+
+			<!-- <div class="container">
+			<p class="child-item">
+				Clarinet Rental - $15 /month  
+			</p>
+			<img src="/rentals/clarinet.png"  class="child-item" />
+			</div>
+
+			<div class="container">
+			<img src="/rentals/alto-sax.png"  class="child-item" />
+
+			<p class="child-item">
+				Alto Saxophone - $40 /month  
+			</p>
+			</div>
+
+			<div class="container">
+			<p class="child-item">
+				Trumpet/Cornet Rental - $15 /month  
+			</p>
+			<img src="/rentals/trumpet.png"  class="child-item" />
+			</div>
+
+			<div class="container">
+			<img class="child-item" src="/rentals/trombone.png"/>
+			<p class="child-item">
+			Trombone rental - $15/month
+			</p>
+			</div>
+
+			<div class="container">
+			<p class="child-item">
+			French Horn rental - $15/month
+			</p>			
+			<img class="child-item" src="/rentals/french-horn.jpg"/>
+
+			</div>
+
+			<div class="container">
+			<img class="child-item" src="/rentals/bass.png"/>
+			<p class="child-item">
+				Bass Guitar Rental - $15/month
+			</p>
+			</div>
+
+			<div class="container">
+			<p class="child-item">
+				Electric Guitar Rental - $15 /month  
+			</p>
+			<img src="/rentals/guitar.png"  class="child-item" />
+			</div>
+			
+			<div class="container">
+			<img class="child-item" src="/rentals/amp.jpg"/>
+			<p class="child-item">
+				Practice Amp Rental - Guitar - $15/month
+			</p>
+			</div> -->
+
+		</main>
+		<Footer />
+	</body>
+</html>
