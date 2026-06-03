@@ -1,35 +1,33 @@
 ---
-import Layout from '../layouts/BlogPost.astro';
-import Layout2 from '../layouts/ChildPost.astro';
+import Layout from "../layouts/BlogPost.astro";
+import Layout2 from "../layouts/ChildPost.astro";
 ---
-
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
-		.container {
+			.container {
+				display: flex;
+				flex-direction: row;
+				gap: 10px;
+				padding-top: 5px;
+			}
 
-			display: flex;
-			flex-direction: row;
-			gap: 10px;
-			padding-top: 5px;
-		}
+			img {
+				max-height: 512px;
+				max-width: 256px;
+			}
 
-		img {
-			max-height: 512px;
-			max-width: 256px;
-		}
+			.profile-pic {
+				max-width: 100px;
+			}
 
-		.profile-pic {
-			max-width: 100px;
-		}
-
-		.child-item {
-  			align-self: center;
-			font-weight: bold;
-  		}
+			.child-item {
+				align-self: center;
+				font-weight: bold;
+			}
 		</style>
 	</head>
 	<body>
@@ -37,18 +35,18 @@ import Layout2 from '../layouts/ChildPost.astro';
 		<main>
 			<h1>Music in the Valley</h1>
 			<p>
-			These are some cool places to listen, practice or perform music in and near the Cherry Valley area of Washington
+				These are some cool places to listen, practice or perform music
+				in and near the Cherry Valley area of Washington
 			</p>
 
 			<div class="container">
-			<img class="child-item" src="/inspire-music-logo.png"/>
-			<p class="child-item">
-					
-		Jeff Coult with Inspire Music offers lessons for many instruments, 
-		as well as music performance to enhance a venue or event.  
-		He has a location in Downtown Duvall at 26311 NE Valley Street, above Valley Mail. 
- 	
-			</p>
+				<img class="child-item" src="/inspire-music-logo.png" />
+				<p class="child-item">
+					Jeff Coult with Inspire Music offers lessons for many
+					instruments, as well as music performance to enhance a venue
+					or event. He has a location in Downtown Duvall at 26311 NE
+					Valley Street, above Valley Mail.
+				</p>
 			</div>
 
 			<!-- <div class="container">
@@ -108,7 +106,6 @@ import Layout2 from '../layouts/ChildPost.astro';
 				Practice Amp Rental - Guitar - $15/month
 			</p>
 			</div> -->
-
 		</main>
 		<Footer />
 	</body>
