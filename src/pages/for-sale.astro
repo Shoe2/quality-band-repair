@@ -1,0 +1,112 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+		.container {
+
+			display: flex;
+			flex-direction: row;
+			gap: 10px;
+			padding-top: 5px;
+		}
+
+		img {
+			max-height: 512px;
+			max-width: 256px;
+		}
+
+		.profile-pic {
+			max-width: 100px;
+		}
+
+		.child-item {
+  			align-self: center;
+			font-weight: bold;
+  		}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Items For Sale</h1>
+			<p>
+			These are used instruments and gear that are looking for a new home  <a href="/contact">Contact Us</a> for more information.
+			</p>
+
+			<div class="container">
+			<img class="child-item" src="/for-sale/bongos-front.png"/>
+			<p class="child-item">
+				LP Aspire Bongos - $50
+			</p>
+			</div>
+
+			<!-- <div class="container">
+			<p class="child-item">
+				Clarinet Rental - $15 /month  
+			</p>
+			<img src="/rentals/clarinet.png"  class="child-item" />
+			</div>
+
+			<div class="container">
+			<img src="/rentals/alto-sax.png"  class="child-item" />
+
+			<p class="child-item">
+				Alto Saxophone - $40 /month  
+			</p>
+			</div>
+
+			<div class="container">
+			<p class="child-item">
+				Trumpet/Cornet Rental - $15 /month  
+			</p>
+			<img src="/rentals/trumpet.png"  class="child-item" />
+			</div>
+
+			<div class="container">
+			<img class="child-item" src="/rentals/trombone.png"/>
+			<p class="child-item">
+			Trombone rental - $15/month
+			</p>
+			</div>
+
+			<div class="container">
+			<p class="child-item">
+			French Horn rental - $15/month
+			</p>			
+			<img class="child-item" src="/rentals/french-horn.jpg"/>
+
+			</div>
+
+			<div class="container">
+			<img class="child-item" src="/rentals/bass.png"/>
+			<p class="child-item">
+				Bass Guitar Rental - $15/month
+			</p>
+			</div>
+
+			<div class="container">
+			<p class="child-item">
+				Electric Guitar Rental - $15 /month  
+			</p>
+			<img src="/rentals/guitar.png"  class="child-item" />
+			</div>
+			
+			<div class="container">
+			<img class="child-item" src="/rentals/amp.jpg"/>
+			<p class="child-item">
+				Practice Amp Rental - Guitar - $15/month
+			</p>
+			</div> -->
+
+		</main>
+		<Footer />
+	</body>
+</html>
