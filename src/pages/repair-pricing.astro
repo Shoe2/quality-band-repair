@@ -10,17 +10,16 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
-		
-				.container {
-					display: flex;
-					flex-direction: column;
-					gap: 10px;
-				}
+			.container {
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+			}
 
-				.child-item {
-					align-self: center;
-				}
-		
+			.child-item {
+				align-self: center;
+			}
+
 			img {
 				max-height: 512px;
 				max-width: 256px;
@@ -51,11 +50,11 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 				I also price match other local repair shops, if any repair I quote
 				would be cheaper at somewhere in the greater Seattle area that's drivable
 				(within reason, we're not talking road trip here) from my shop, I'll
-				match their price and even change the price here to match. I
+				match their price and even change the price here to match.
 			</p>
 			<div class="container">
-				<h3>Woodwinds</h3>
-				<h4>Flute/Piccolo</h4>
+				<h3 class="child-item">Woodwinds</h3>
+				<h4 class="child-item">Flute/Piccolo</h4>
 				<p class="child-item">
 					<ul>
 						<li>
@@ -66,10 +65,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 						</li>
 						<li>
 							<b>Re-pad - $300</b> - Replace all pads, replace corks
-							and felts where needed, regulate and play test. <b
-								>Combine with an Professional Cleaning for just
-								$100 more. ($40 savings!)</b
-							>
+							and felts where needed, regulate and play test. <b>
+								Combine with an Professional Cleaning for just
+								$100 more. ($40 savings!)
+							</b>
 						</li>
 						<li>
 							<b>Replace Single Pad - $15</b> - I will do my best to
@@ -89,7 +88,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 						</li>
 					</ul>
 				</p>
-				<h4>Clarinet</h4>
+				<h4 class="child-item">Clarinet</h4>
 				<p class="child-item">
 					<ul>
 						<li>
@@ -134,7 +133,9 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 						</li>
 					</ul>
 				</p>
-				<h4>Bass/Contrabass Clarinet (and other low woodwinds)</h4>
+				<h4 class="child-item">
+					Bass/Contrabass Clarinet (and other low woodwinds)
+				</h4>
 				<p class="child-item">
 					<ul>
 						<li>
@@ -179,7 +180,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 						</li>
 					</ul>
 				</p>
-				<h4>Oboe/English Horn/High Double Reeds</h4>
+				<h4 class="child-item">Oboe/English Horn/High Double Reeds</h4>
 				<p class="child-item">
 					<ul>
 						<li>
@@ -224,7 +225,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 						</li>
 					</ul>
 				</p>
-				<h4>Bassoon/Low Double Reeds</h4>
+				<h4 class="child-item">Bassoon/Low Double Reeds</h4>
 				<p class="child-item">
 					<ul>
 						<li>
@@ -271,7 +272,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 						</li>
 					</ul>
 				</p>
-				<h4>Saxophones</h4>
+				<h4 class="child-item">Saxophones</h4>
 				<p class="child-item">
 					<ul>
 						<li>
@@ -326,9 +327,9 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 				</p>
 			</div>
 			<div class="container">
-				<h3>Brass</h3>
+				<h3 class="child-item">Brass</h3>
 				<p class="child-item"></p>
-				<h4>Trumpet Family</h4>
+				<h4 class="child-item">Trumpet Family</h4>
 				<p class="child-item">
 					<ul>
 						<li>
@@ -360,7 +361,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 						</li>
 					</ul>
 				</p>
-				<h4>French Horn Family</h4>
+				<h4 class="child-item">French Horn Family</h4>
 				<p class="child-item">
 					<ul>
 						<li>
@@ -394,7 +395,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 						</li>
 					</ul>
 				</p>
-				<h4>Trombones/Baritone/Euphoniums</h4>
+				<h4 class="child-item">Trombones/Baritone/Euphoniums</h4>
 				<p class="child-item">
 					<ul>
 						<li>
@@ -427,7 +428,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 						</li>
 					</ul>
 				</p>
-				<h4>Tuba/Sousaphone</h4>
+				<h4 class="child-item">Tuba/Sousaphone</h4>
 				<p class="child-item">
 					<ul>
 						<li>
@@ -462,8 +463,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 			</div>
 
 			<div class="container">
-				<h3>Percussion</h3>
-				<h4>Drums/Cymbals/Drum set</h4>
+				<h3 class="child-item">Percussion</h3>
+				<h4 class="child-item">Drums/Cymbals/Drum set</h4>
 				<p class="child-item">
 					<li>
 						<b> Professional Cleaning - $50 per piece </b>
@@ -478,7 +479,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 			</div>
 
 			<div class="container">
-				<h3>Guitar/Bass</h3>
+				<h3 class="child-item">Guitar/Bass</h3>
 				<p class="child-item">
 					<ul>
 						<li>
@@ -513,29 +514,34 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 				</p>
 
 				<div class="container">
-					<h3>Amplifiers, Microphones and other Audio Equipment</h3>
-					<ul>
-						<li>
-							<b> Cleaning $50 </b> - Disassemble, remove dust and filth
-							from electronics, clean outside, remove grime from mesh/filters/speaker
-							fabric.
-						</li>
-						<li>
-							<b>
-								Small Non-Electronic Parts Replacement $5 plus
-								cost of part
-							</b> - I charge a $5 surcharge to track down original
-							nobs, or other cosmetic parts for mics, amps and other
-							electronics that don't really require any repair work.
-							This does not include the cost of the part.
-						</li>
-						<li>
-							<b>Electronics Repairs - $35-$65 </b> - Price depends
-							on how major or minor the repair is. Resolder wiring or
-							components. Replace nobs/potentiometers, switches, output
-							jack, swap pickups...etc. Does not include cost of parts.
-						</li>
-					</ul>
+					<h3 class="child-item">
+						Amplifiers, Microphones and other Audio Equipment
+					</h3>
+					<p class="child-item">
+						<ul>
+							<li>
+								<b> Cleaning $50 </b> - Disassemble, remove dust and
+								filth from electronics, clean outside, remove grime
+								from mesh/filters/speaker fabric.
+							</li>
+							<li>
+								<b>
+									Small Non-Electronic Parts Replacement $5
+									plus cost of part
+								</b> - I charge a $5 surcharge to track down original
+								nobs, or other cosmetic parts for mics, amps and other
+								electronics that don't really require any repair work.
+								This does not include the cost of the part.
+							</li>
+							<li>
+								<b>Electronics Repairs - $35-$65 </b> - Price depends
+								on how major or minor the repair is. Resolder wiring
+								or components. Replace nobs/potentiometers, switches,
+								output jack, swap pickups...etc. Does not include
+								cost of parts.
+							</li>
+						</ul>
+					</p>
 				</div>
 			</div>
 			<Footer />
