@@ -1,0 +1,544 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			@media (min-width: 600px) {
+				.container {
+					display: flex;
+					flex-direction: row;
+					gap: 10px;
+				}
+
+				.child-item {
+					align-self: center;
+				}
+			}
+			img {
+				max-height: 512px;
+				max-width: 256px;
+			}
+
+			.profile-pic {
+				max-width: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h2>Repair Prices</h2>
+			<p class="child-item">
+				I don't have any kind of service minimums on hourly rate. No
+				repair is too big or small and I won't charge you $80 for a 10
+				second repair where all I did was adjust a screw. (I wouldn't
+				even charge for that to be honest).
+				<br />
+				All repairs come with a 30 day guarantee, and for schools I have a
+				special extension where that guarantee/warranty extends to the first
+				day of school if work was done over the summer. (So if I finish the
+				work July 1st, the work is still in warranty for the first month of
+				school so kids have a chance to test it out regularly before the guarantee
+				wears out).
+				<br />
+				I also price match other local repair shops, if any repair I quote
+				would be cheaper at somewhere in the greater Seattle area that's drivable
+				(within reason, we're not talking road trip here) from my shop, I'll
+				match their price and even change the price here to match. I
+			</p>
+			<div class="container">
+				<h3>Woodwinds</h3>
+				<h4>Flute/Piccolo</h4>
+				<p class="child-item">
+					<ul>
+						<li>
+							<b>Professional Cleaning - $140</b> - Full disassembly,
+							chemically clean body, manually clean and polish keys
+							and body. Regulate pads as needed, replace corks and felts
+							as needed. Clean inside case and play test.
+						</li>
+						<li>
+							<b>Re-pad - $300</b> - Replace all pads, replace corks
+							and felts where needed, regulate and play test. <b
+								>Combine with an Professional Cleaning for just
+								$100 more. ($40 savings!)</b
+							>
+						</li>
+						<li>
+							<b>Replace Single Pad - $15</b> - I will do my best to
+							match the material and color of the current pads, if I
+							can't get a hold of the exact same pad, I will send pictures
+							of comparisons before any work is done
+						</li>
+						<li>
+							<b>Minor Find & Fix $25-$35</b> - something just not working
+							right? I'll same-day track down the issue, and fix it
+							on the spot if it doesn't require parts I don't have in
+							the shop. This includes stuff like bent rods, keys, replacing
+							springs, soldering braces back on, replacing key pearls...etc.
+							Even if I don't have the parts and can't fix it right
+							then and there, the price won't go above $35 it might
+							just take some time to order a part.
+						</li>
+					</ul>
+				</p>
+				<h4>Clarinet</h4>
+				<p class="child-item">
+					<ul>
+						<li>
+							<b>Professional Cleaning - $140</b> - Full disassembly,
+							clean (and oil if wood) body, manually clean and polish
+							keys. Regulate pads as needed, replace corks and felts
+							as needed. Clean inside case and play test.
+						</li>
+						<li>
+							<b>Re-pad - $300</b> - Replace all pads, replace corks
+							and felts where needed, regulate and play test. <b
+								>Combine with a Professional Cleaning for just
+								$100 more. ($40 savings!)</b
+							>
+						</li>
+						<li>
+							<b>Replace Single Pad - $15</b> - I will do my best to
+							match the material and color of the current pads, if I
+							can't get a hold of the exact same pad, I will send pictures
+							of comparisons before any work is done
+						</li>
+						<li>
+							<b>Minor Find & Fix $25-$35</b> - something just not working
+							right? I'll same-day track down the issue, and fix it
+							on the spot if it doesn't require parts I don't have in
+							the shop. This includes stuff like bent rods, keys, replacing
+							springs, patching holes in wood bodies and reattaching
+							lost rod braces...etc. Even if I don't have the parts
+							and can't fix it right then and there, the price won't
+							go above $35 it might just take some time to order a part.
+						</li>
+						<li>
+							<b>Bigger Body repairs - $TBD</b> - If the wood body of
+							a clarinet cracks or has major damage, it is usually worth
+							repairing. Most wooden clarinets (but not all) are of
+							a quality where patching or repairing the wood it worth
+							looking into, but can be pricy and is quoted on a case-by-case
+							basis. No work is done without quoting and consulting
+							you, and I won't ever repair something that doesn't make
+							sense because the value of the instrument is lower than
+							the cost of repairs unless you really want to.
+						</li>
+					</ul>
+				</p>
+				<h4>Bass/Contrabass Clarinet (and other low woodwinds)</h4>
+				<p class="child-item">
+					<ul>
+						<li>
+							<b>Professional Cleaning - $250</b> - Full disassembly,
+							clean (and oil if wood) body, manually clean and polish
+							keys. Regulate pads as needed, replace corks and felts
+							as needed. Clean inside case and play test.
+						</li>
+						<li>
+							<b>Re-pad - $450</b> - Replace all pads, replace corks
+							and felts where needed, regulate and play test. <b
+								>Combine with an Professional Cleaning for just
+								$150 more. ($100 savings!)</b
+							>
+						</li>
+						<li>
+							<b>Replace Single Pad - $25</b> - I will do my best to
+							match the material and color of the current pads, if I
+							can't get a hold of the exact same pad, I will send pictures
+							of comparisons before any work is done
+						</li>
+						<li>
+							<b>Minor Find & Fix $25-$50</b> - something just not working
+							right? I'll same-day track down the issue, and fix it
+							on the spot if it doesn't require parts I don't have in
+							the shop. This includes stuff like bent rods, keys, replacing
+							springs, patching holes in wood bodies and reattaching
+							lost rod braces...etc. Even if I don't have the parts
+							and can't fix it right then and there, the price won't
+							go above $50 it might just take some time to order a part.
+						</li>
+						<li>
+							<b>Bigger Body repairs - $TBD</b> - If the wood body of
+							a clarinet cracks or has major damage, it is usually worth
+							repairing. Most wooden clarinets (but not all) are of
+							a quality where patching or repairing the wood it worth
+							looking into, but can be pricy and is quoted on a case-by-case
+							basis. No work is done without quoting and consulting
+							you, and I won't ever repair something that doesn't make
+							sense because the value of the instrument is lower than
+							the cost of repairs unless you really want to.
+						</li>
+					</ul>
+				</p>
+				<h4>Oboe/English Horn/High Double Reeds</h4>
+				<p class="child-item">
+					<ul>
+						<li>
+							<b>Professional Cleaning - $140</b> - Full disassembly,
+							clean (and oil if wood) body, manually clean and polish
+							keys. Regulate pads as needed, replace corks and felts
+							as needed. Clean inside case and play test.
+						</li>
+						<li>
+							<b>Re-pad - $525</b> - Replace all pads, replace corks
+							and felts where needed, regulate and play test. <b
+								>Combine with a Professional Cleaning for just
+								$100 more. ($40 savings!)</b
+							>
+						</li>
+						<li>
+							<b>Replace Single Pad - $20</b> - I will do my best to
+							match the material and color of the current pads, if I
+							can't get a hold of the exact same pad, I will send pictures
+							of comparisons before any work is done
+						</li>
+						<li>
+							<b>Minor Find & Fix $35-$40</b> - something just not working
+							right? I'll same-day track down the issue, and fix it
+							on the spot if it doesn't require parts I don't have in
+							the shop. This includes stuff like bent rods, keys, replacing
+							springs, patching holes in wood bodies and reattaching
+							lost rod braces...etc. Even if I don't have the parts
+							and can't fix it right then and there, the price won't
+							go above $40 it might just take some time to order a part.
+						</li>
+						<li>
+							<b>Bigger Body repairs - $TBD</b> - If the wood body of
+							a oboe cracks or has major damage, it is usually worth
+							repairing. Most wooden oboes (but not all) are of a quality
+							where patching or repairing the wood it worth looking
+							into, but can be pricy and is quoted on a case-by-case
+							basis. No work is done without quoting and consulting
+							you, and I won't ever repair something that doesn't make
+							sense because the value of the instrument is lower than
+							the cost of repairs unless you really want to.
+						</li>
+					</ul>
+				</p>
+				<h4>Bassoon/Low Double Reeds</h4>
+				<p class="child-item">
+					<ul>
+						<li>
+							<b>Professional Cleaning - $250</b> - Full disassembly,
+							clean and oil body, manually clean and polish keys. Regulate
+							pads as needed, replace corks and felts as needed. Clean
+							inside case and play test. (If it's a plastic Bassoon
+							we can discuss a discount as it won't need to be oiled
+							and cleaning is easier).
+						</li>
+						<li>
+							<b>Re-pad - $720</b> - Replace all pads, replace corks
+							and felts where needed, regulate and play test. <b
+								>Combine with a Professional Cleaning for just
+								$100 more. ($40 savings!)</b
+							>
+						</li>
+						<li>
+							<b>Replace Single Pad - $30</b> - I will do my best to
+							match the material and color of the current pads, if I
+							can't get a hold of the exact same pad, I will send pictures
+							of comparisons before any work is done
+						</li>
+						<li>
+							<b>Minor Find & Fix $40-$50</b> - something just not working
+							right? I'll same-day track down the issue, and fix it
+							on the spot if it doesn't require parts I don't have in
+							the shop. This includes stuff like bent rods, keys, replacing
+							springs, patching holes in wood bodies and reattaching
+							lost rod braces...etc. Even if I don't have the parts
+							and can't fix it right then and there, the price won't
+							go above $50 it might just take some time to order a part.
+						</li>
+						<li>
+							<b>Bigger Body repairs - $TBD</b> - If the wood body of
+							a bassoon cracks or has major damage, it is usually worth
+							repairing. Most bassoons (but not all) are of a quality
+							where patching or repairing the wood it worth looking
+							into, but can be pricy and is quoted on a case-by-case
+							basis. No work is done without quoting and consulting
+							you, and I won't ever repair something that doesn't make
+							sense because the value of the instrument is lower than
+							the cost of repairs unless you really want to.
+						</li>
+					</ul>
+				</p>
+				<h4>Saxophones</h4>
+				<p class="child-item">
+					<ul>
+						<li>
+							<b>
+								Professional Cleaning - $120 Alto/Soprano, $150
+								Tenor, $250 Bari/Bass
+							</b>
+							- Full disassembly, chemically clean body, manually clean
+							and polish keys. Regulate pads as needed, replace corks
+							and felts as needed. Clean inside case and play test.
+						</li>
+						<li>
+							<b>
+								Re-pad - $390 Alto/Soprano, $520 Tenor, $650
+								Bari/Bass
+							</b> - Replace all pads, replace corks and felts where
+							needed, regulate and play test. <b>
+								Combine with a Professional Cleaning for 50% off
+								of the price of the cleaning
+							</b>
+						</li>
+						<li>
+							<b>
+								Replace Single Pad - $15 Alto/Soprano, $20
+								Tenor, $25 Bari/Bass
+							</b> - I will do my best to match the material, color,
+							and resonator of the current pads, if I can't get a hold
+							of the exact same pad, I will send pictures of comparisons
+							before any work is done
+						</li>
+						<li>
+							<b>Minor Find & Fix $25-$35</b> - something just not working
+							right? I'll same-day track down the issue, and fix it
+							on the spot if it doesn't require parts I don't have in
+							the shop. This includes stuff like bent rods, keys, replacing
+							springs, leveling minor tone hole issues, soldering work...etc.
+							Even if I don't have the parts and can't fix it right
+							then and there, the price won't go above $35 it might
+							just take some time to order a part.
+						</li>
+						<li>
+							<b>Non-Tone Hole Dent Removal $65</b> - If the body or
+							neck of the sax is dented or bent, I will get it looking
+							good as new.
+						</li>
+						<li>
+							<b>Bigger Repairs - $TBD</b> - Dented or damaged tone
+							holes, major missing parts, other big issues will be quoted
+							on a case by case basis.
+						</li>
+					</ul>
+				</p>
+			</div>
+			<div class="container">
+				<h3>Brass</h3>
+				<p class="child-item"></p>
+				<h4>Trumpet Family</h4>
+				<p class="child-item">
+					<ul>
+						<li>
+							<b> Professional Cleaning - $100 </b>
+							- Chemically clean body and slides, manually clean valves.
+							Oil all valves, lubricate all tuning slides. and polish
+							keys. Replace felts and water key stoppers as needed.
+							Clean inside case and play test.
+						</li>
+						<li>
+							<b>Minor Find & Fix $25-$35</b> - something just not working
+							right? I'll same-day track down the issue, and fix it
+							on the spot if it doesn't require parts I don't have in
+							the shop. This includes stuff like stuck tuning slides/mouthpieces/valves,
+							soldering work...etc. Even if I don't have the parts and
+							can't fix it right then and there, the price won't go
+							above $35 it might just take some time to order a part.
+						</li>
+						<li>
+							<b>Non Tuning-Slide/Valve Dent Removal $65</b> - If the
+							body or bell of the sax is dented or bent, I will get
+							it looking good as new. I can also fix mouthpiece shaft
+							denting from dropped mouthpieces.
+						</li>
+						<li>
+							<b>Bigger Repairs - $TBD</b> - Dented or damaged tuning
+							slides and damaged valves that are worn too small...stuff
+							like that will be quoted on a case by case basis.
+						</li>
+					</ul>
+				</p>
+				<h4>French Horn Family</h4>
+				<p class="child-item">
+					<ul>
+						<li>
+							<b> Professional Cleaning - $150 </b>
+							- Chemically clean body and slides, manually clean valves.
+							Oil all valves, lubricate all tuning slides. and polish
+							keys. Replace felts and water key stoppers as needed.
+							Clean inside case and play test.
+						</li>
+						<li>
+							<b>Minor Find & Fix $25-$35</b> - something just not working
+							right? I'll same-day track down the issue, and fix it
+							on the spot if it doesn't require parts I don't have in
+							the shop. This includes stuff like stuck tuning slides/mouthpieces/valves,
+							restring rotary valves, soldering work...etc. Even if
+							I don't have the parts and can't fix it right then and
+							there, the price won't go above $35 it might just take
+							some time to order a part.
+						</li>
+						<li>
+							<b>Non-Slide/Valve Dent Removal $65</b> - If the body
+							or bell of the sax is dented or bent, I will get it looking
+							good as new. I can also fix mouthpiece shaft denting from
+							dropped mouthpieces.
+						</li>
+						<li>
+							<b>Bigger Repairs - $TBD</b> - Dented or damaged tuning
+							slides and damaged valves that are worn too small, trombone
+							inner/outer slides that are not aligned...stuff like that
+							will be quoted on a case by case basis.
+						</li>
+					</ul>
+				</p>
+				<h4>Trombones/Baritone/Euphoniums</h4>
+				<p class="child-item">
+					<ul>
+						<li>
+							<b> Professional Cleaning - $150 </b>
+							- Chemically clean body and slides, manually clean valves.
+							Oil all valves, lubricate all tuning slides. and polish
+							keys. Replace felts and water key stoppers as needed.
+							Clean inside case and play test.
+						</li>
+						<li>
+							<b>Minor Find & Fix $25-$35</b> - something just not working
+							right? I'll same-day track down the issue, and fix it
+							on the spot if it doesn't require parts I don't have in
+							the shop. This includes stuff like stuck tuning slides/mouthpieces/valves,
+							soldering work...etc. Even if I don't have the parts and
+							can't fix it right then and there, the price won't go
+							above $35 it might just take some time to order a part.
+						</li>
+						<li>
+							<b>Non-Slide/Valve Dent Removal $65</b> - If the body
+							or bell of the sax is dented or bent, I will get it looking
+							good as new. I can also fix mouthpiece shaft denting from
+							dropped mouthpieces.
+						</li>
+						<li>
+							<b>Bigger Repairs - $TBD</b> - Dented or damaged tuning
+							slides and damaged valves that are worn too small, trombone
+							inner/outer slides that are not aligned...stuff like that
+							will be quoted on a case by case basis.
+						</li>
+					</ul>
+				</p>
+				<h4>Tuba/Sousaphone</h4>
+				<p class="child-item">
+					<ul>
+						<li>
+							<b> Professional Cleaning - $150 </b>
+							- Full disassembly, chemically clean slides, manually
+							clean valves and body. Oil all valves, lubricate all tuning
+							slides. and polish keys. Replace felts and water key stoppers
+							as needed. Clean inside case and play test.
+						</li>
+						<li>
+							<b>Minor Find & Fix $35-$50</b> - something just not working
+							right? I'll same-day track down the issue, and fix it
+							on the spot if it doesn't require parts I don't have in
+							the shop. This includes stuff like stuck tuning slides/mouthpieces/valves,
+							soldering work...etc. Even if I don't have the parts and
+							can't fix it right then and there, the price won't go
+							above $50 it might just take some time to order a part.
+						</li>
+						<li>
+							<b>Non Tuning-Slide/Valve Dent Removal $65</b> - If the
+							body or bell of the sax is dented or bent, I will get
+							it looking good as new. I can also fix mouthpiece shaft
+							denting from dropped mouthpieces.
+						</li>
+						<li>
+							<b>Bigger Repairs - $TBD</b> - Dented or damaged tuning
+							slides and damaged valves that are worn too small...stuff
+							like that will be quoted on a case by case basis.
+						</li>
+					</ul>
+				</p>
+			</div>
+
+			<div class="container">
+				<h3>Percussion</h3>
+				<h4>Drums/Cymbals/Drum set</h4>
+				<p class="child-item">
+					<li>
+						<b> Professional Cleaning - $50 per piece </b>
+						- clean all cymbals, disassemble and clean all drums remove
+						rust from chrome, reassemble and tune.
+					</li>
+					<li>
+						<b>Shell Modification/Repair $50 - </b> - Shorten shell, re-drill
+						holes for the lugs on one side, and re-craft the bearing edge.
+					</li>
+				</p>
+			</div>
+
+			<div class="container">
+				<h3>Guitar/Bass</h3>
+				<p class="child-item">
+					<ul>
+						<li>
+							<b>
+								Professional Cleaning - $70 (Includes cost of
+								strings free)
+							</b>
+							- Full disassembly, clean full body, all hardware de-oxidize
+							any rusty metal parts.
+						</li>
+						<li>
+							<b>Small Non-Electronic Parts Replacement $35</b> - Replace
+							the nut, saddle, broken tuners, strap buttons, stripped
+							screw holes, Truss Rod adjustment...etc Does not include
+							cost of parts.
+						</li>
+						<li>
+							<b>Electronics Repairs - $40 </b> - resolder wiring or
+							components. Replace nobs/potentiometers, switches, output
+							jack, swap pickups...etc. Does not include cost of parts
+						</li>
+						<li>
+							<b>Defective Pickup Repairs - $65 </b> - fix damaged pickups.
+						</li>
+						<li>
+							<b>Major Damage or Repairs - $TBD</b> - Structural cracks
+							in the body or neck, reglue wood parts, refrets...etc
+							These major repairs have to be quoted one at a time, as
+							they vary wildly case-by-case
+						</li>
+					</ul>
+				</p>
+
+				<div class="container">
+					<h3>Amplifiers, Microphones and other Audio Equipment</h3>
+					<ul>
+						<li>
+							<b> Cleaning $50 </b> - Disassemble, remove dust and filth
+							from electronics, clean outside, remove grime from mesh/filters/speaker
+							fabric.
+						</li>
+						<li>
+							<b>
+								Small Non-Electronic Parts Replacement $5 plus
+								cost of part
+							</b> - I charge a $5 surcharge to track down original
+							nobs, or other cosmetic parts for mics, amps and other
+							electronics that don't really require any repair work.
+							This does not include the cost of the part.
+						</li>
+						<li>
+							<b>Electronics Repairs - $35-$65 </b> - Price depends
+							on how major or minor the repair is. Resolder wiring or
+							components. Replace nobs/potentiometers, switches, output
+							jack, swap pickups...etc. Does not include cost of parts.
+						</li>
+					</ul>
+				</div>
+			</div>
+			<Footer />
+		</main>
+	</body>
+</html>
