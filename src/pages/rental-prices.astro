@@ -1,8 +1,8 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
 <!doctype html>
@@ -10,27 +10,26 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
-		.container {
+			.container {
+				display: flex;
+				flex-direction: row;
+				gap: 10px;
+				padding-top: 5px;
+			}
 
-			display: flex;
-			flex-direction: row;
-			gap: 10px;
-			padding-top: 5px;
-		}
+			img {
+				max-height: 512px;
+				max-width: 256px;
+			}
 
-		img {
-			max-height: 512px;
-			max-width: 256px;
-		}
+			.profile-pic {
+				max-width: 100px;
+			}
 
-		.profile-pic {
-			max-width: 100px;
-		}
-
-		.child-item {
-  			align-self: center;
-			font-weight: bold;
-  		}
+			.child-item {
+				align-self: center;
+				font-weight: bold;
+			}
 		</style>
 	</head>
 	<body>
@@ -38,76 +37,63 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<main>
 			<h1>Instrument Rental Prices</h1>
 			<p>
-			My instrument rentals are meant to be affordable, low risk options for students that let parents
-			have the opportunity to give their children a chance to try things out at a low cost without committing
-			to purchasing anything.  I currently do not offer rent-to-own options.
+				My instrument rentals are meant to be affordable, low risk
+				options for students that let parents have the opportunity to
+				give their children a chance to try things out at a low cost
+				without committing to purchasing anything. I currently do not
+				offer rent-to-own options.
 			</p>
 
 			<div class="container">
-			<img class="child-item" src="/rentals/flute.png"/>
-			<p class="child-item">
-				Flute rental - $15/month
-			</p>
+				<img class="child-item" src="/rentals/flute.png" />
+				<p class="child-item">Flute rental - $15/month</p>
 			</div>
 
 			<div class="container">
-			<p class="child-item">
-				Clarinet Rental - $15 /month  
-			</p>
-			<img src="/rentals/clarinet.png"  class="child-item" />
+				<p class="child-item">Clarinet Rental - $15 /month</p>
+				<img src="/rentals/clarinet.png" class="child-item" />
 			</div>
 
 			<div class="container">
-			<img src="/rentals/alto-sax.png"  class="child-item" />
+				<img src="/rentals/alto-sax.png" class="child-item" />
 
-			<p class="child-item">
-				Alto Saxophone - $40 /month  
-			</p>
+				<p class="child-item">Alto Saxophone - $40 /month</p>
 			</div>
 
 			<div class="container">
-			<p class="child-item">
-				Trumpet/Cornet Rental - $15 /month  
-			</p>
-			<img src="/rentals/trumpet.png"  class="child-item" />
+				<p class="child-item">Trumpet/Cornet Rental - $15 /month</p>
+				<img src="/rentals/trumpet.png" class="child-item" />
 			</div>
 
 			<div class="container">
-			<img class="child-item" src="/rentals/trombone.png"/>
-			<p class="child-item">
-			Trombone rental - $15/month
-			</p>
+				<img class="child-item" src="/rentals/trombone.png" />
+				<p class="child-item">Trombone rental - $15/month</p>
 			</div>
 
-			<div class="container">
+			<!-- <div class="container">
 			<p class="child-item">
 			French Horn rental - $15/month
 			</p>			
 			<img class="child-item" src="/rentals/french-horn.jpg"/>
 
+			</div> -->
+
+			<div class="container">
+				<p class="child-item">Bass Guitar Rental - $15/month</p>
+				<img class="child-item" src="/rentals/bass.png" />
 			</div>
 
 			<div class="container">
-			<img class="child-item" src="/rentals/bass.png"/>
-			<p class="child-item">
-				Bass Guitar Rental - $15/month
-			</p>
+				<img src="/rentals/guitar.png" class="child-item" />
+				<p class="child-item">Electric Guitar Rental - $15 /month</p>
 			</div>
 
 			<div class="container">
-			<p class="child-item">
-				Electric Guitar Rental - $15 /month  
-			</p>
-			<img src="/rentals/guitar.png"  class="child-item" />
+				<p class="child-item">
+					Practice Amp Rental - Guitar - $15/month
+				</p>
+				<img class="child-item" src="/rentals/amp.jpg" />
 			</div>
-			
-			<div class="container">
-			<img class="child-item" src="/rentals/amp.jpg"/>
-			<p class="child-item">
-				Practice Amp Rental - Guitar - $15/month
-			</p>
-			</div>
-
 		</main>
 		<Footer />
 	</body>
